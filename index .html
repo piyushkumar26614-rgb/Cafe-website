@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Clubhouse Cafe – Great Coffee. Great Vibes. Located in Model Town, Jalandhar. LGBTQ+ friendly & women-owned." />
+  <title>Clubhouse Cafe | Jalandhar</title>
+  <link rel="stylesheet" href="style .css" />
+
+  <!-- Google Fonts: Cormorant Garamond (display) + Outfit (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+</head>
+<body>
+
+  <!-- ░░ GRAIN TEXTURE OVERLAY ░░ -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║           NAVBAR                 ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="Clubhouse Cafe — Home">
+        <div class="logo-mark" aria-hidden="true">☕</div>
+        <div class="logo-text">
+          <span class="logo-name">Clubhouse</span>
+          <span class="logo-tag">C A F E</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="#home"     class="nav-link">Home</a>
+        <a href="#about"    class="nav-link">About</a>
+        <a href="#menu"     class="nav-link">Menu</a>
+        <a href="#gallery"  class="nav-link">Gallery</a>
+        <a href="#reviews"  class="nav-link">Reviews</a>
+        <a href="#contact"  class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Right -->
+      <div class="nav-right">
+        <a href="tel:08699766654" class="btn btn-cream btn-sm nav-order">
+          <i data-lucide="phone" width="14" height="14"></i>
+          Call Us
+        </a>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <a href="#home"    class="m-link">Home</a>
+      <a href="#about"   class="m-link">About</a>
+      <a href="#menu"    class="m-link">Menu</a>
+      <a href="#gallery" class="m-link">Gallery</a>
+      <a href="#reviews" class="m-link">Reviews</a>
+      <a href="#contact" class="m-link">Contact</a>
+      <div class="m-badges">
+        <span class="badge badge-pride">🏳️‍🌈 LGBTQ+ Friendly</span>
+        <span class="badge badge-women">♀ Women-Owned</span>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║           HERO                   ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1800&q=85"
+        alt=""
+        class="hero-photo"
+        fetchpriority="high"
+      />
+    </div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+
+    <div class="hero-body">
+      <!-- Identity pills -->
+      <div class="hero-pills reveal">
+        <span class="pill">🏳️‍🌈 LGBTQ+ Friendly</span>
+        <span class="pill">♀ Women-Owned</span>
+        <span class="pill">⭐ 4.4 · 205 Reviews</span>
+      </div>
+
+      <h1 class="hero-heading reveal">
+        Welcome to<br />
+        <em>Clubhouse</em><br />
+        Cafe
+      </h1>
+
+      <p class="hero-sub reveal">Great Coffee. Great Vibes.</p>
+
+      <div class="hero-actions reveal">
+        <a href="tel:08699766654" class="btn btn-cream btn-lg">
+          <i data-lucide="coffee" width="18" height="18"></i>
+          Order Now
+        </a>
+        <a href="#contact" class="btn btn-outline-cream btn-lg">
+          <i data-lucide="calendar" width="18" height="18"></i>
+          Reserve Table
+        </a>
+      </div>
+
+      <!-- Floating hours badge -->
+      <div class="hero-hours reveal">
+        <i data-lucide="clock" width="14" height="14"></i>
+        <span>Open today from <strong>9:30 AM</strong></span>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-dot"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║        SERVICES STRIP            ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="services-strip" id="services" aria-label="Service types">
+    <div class="strip-container">
+      <div class="strip-item reveal-up">
+        <div class="strip-icon"><i data-lucide="utensils" width="28" height="28"></i></div>
+        <strong>Dine-In</strong>
+        <p>A cozy ambiance made for lingering over every sip.</p>
+      </div>
+      <div class="strip-divider" aria-hidden="true"></div>
+      <div class="strip-item reveal-up" style="--d:0.1s">
+        <div class="strip-icon"><i data-lucide="shopping-bag" width="28" height="28"></i></div>
+        <strong>Takeaway</strong>
+        <p>Your favourite brew packed perfectly for the road.</p>
+      </div>
+      <div class="strip-divider" aria-hidden="true"></div>
+      <div class="strip-item reveal-up" style="--d:0.2s">
+        <div class="strip-icon"><i data-lucide="bike" width="28" height="28"></i></div>
+        <strong>Delivery</strong>
+        <p>Café warmth delivered straight to your doorstep.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║           ABOUT                  ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="about section" id="about">
+    <div class="about-container">
+
+      <!-- Image collage -->
+      <div class="about-visuals reveal-left">
+        <div class="av-main">
+          <img
+            src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=700&q=80"
+            alt="Cozy interior of Clubhouse Cafe"
+            loading="lazy"
+          />
+        </div>
+        <div class="av-secondary">
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80"
+            alt="Barista crafting latte art"
+            loading="lazy"
+          />
+        </div>
+        <!-- Floating stat -->
+        <div class="av-stat">
+          <span class="stat-num">4.4</span>
+          <span class="stat-stars">★★★★½</span>
+          <span class="stat-label">205 reviews</span>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="about-text reveal-right">
+        <p class="eyebrow">Our Story</p>
+        <h2 class="section-heading">
+          More Than<br />
+          Just <em>Coffee</em>
+        </h2>
+        <p class="about-body">
+          Nestled inside The Elite City Center on Model Town Road, Clubhouse Cafe was born from a
+          simple dream — to create a space where everyone feels at home. Whether you're here
+          for a quiet morning espresso, a working lunch, or a long evening with friends, we've
+          got the perfect corner for you.
+        </p>
+        <p class="about-body">
+          We take pride in being an <strong>LGBTQ+ friendly</strong> and
+          <strong>women-owned</strong> establishment. Our menu celebrates fresh, flavourful
+          ingredients with generous vegetarian options — because great food should be for
+          everyone.
+        </p>
+
+        <!-- Tags -->
+        <div class="about-tags">
+          <span class="tag">🌿 Vegetarian-Friendly</span>
+          <span class="tag">🏳️‍🌈 Inclusive Space</span>
+          <span class="tag">♀ Women-Led</span>
+          <span class="tag">☕ Specialty Coffee</span>
+        </div>
+
+        <a href="#menu" class="btn btn-espresso">
+          Explore Our Menu
+          <i data-lucide="arrow-right" width="16" height="16"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║           MENU                   ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="eyebrow">Crafted With Love</p>
+        <h2 class="section-heading">Our <em>Menu</em></h2>
+        <p class="section-sub">Every item made fresh, every time.</p>
+      </div>
+
+      <!-- Tab switcher -->
+      <div class="menu-tabs reveal-up" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab active" data-tab="drinks" role="tab" aria-selected="true">☕ Drinks</button>
+        <button class="menu-tab" data-tab="food" role="tab" aria-selected="false">🍽 Food</button>
+      </div>
+
+      <!-- DRINKS panel -->
+      <div class="menu-panel active" id="tab-drinks" role="tabpanel">
+        <div class="menu-grid">
+
+          <div class="menu-card reveal-up" style="--d:0.0s">
+            <div class="mc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&q=80" alt="Tiramisu Coffee" loading="lazy" />
+              <span class="mc-badge">Chef's Pick</span>
+            </div>
+            <div class="mc-body">
+              <div class="mc-top">
+                <h3 class="mc-name">Tiramisu Coffee</h3>
+                <span class="mc-price">₹320</span>
+              </div>
+              <p class="mc-desc">Espresso layered with mascarpone foam, dusted with rich cocoa powder.</p>
+              <div class="mc-meta">
+                <span class="mc-tag">☕ Hot / Iced</span>
+                <span class="mc-tag">🌿 Veg</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card reveal-up" style="--d:0.07s">
+            <div class="mc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=400&q=80" alt="Matcha Latte" loading="lazy" />
+              <span class="mc-badge mc-badge-green">Fan Fave</span>
+            </div>
+            <div class="mc-body">
+              <div class="mc-top">
+                <h3 class="mc-name">Matcha Latte</h3>
+                <span class="mc-price">₹280</span>
+              </div>
+              <p class="mc-desc">Ceremonial-grade matcha blended with steamed oat milk and a honey swirl.</p>
+              <div class="mc-meta">
+                <span class="mc-tag">🍵 Earthy</span>
+                <span class="mc-tag">🌿 Veg</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card reveal-up" style="--d:0.14s">
+            <div class="mc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80" alt="Pistachio Coffee" loading="lazy" />
+            </div>
+            <div class="mc-body">
+              <div class="mc-top">
+                <h3 class="mc-name">Pistachio Coffee</h3>
+                <span class="mc-price">₹350</span>
+              </div>
+              <p class="mc-desc">Velvety espresso with house-made pistachio syrup, topped with whipped cream.</p>
+              <div class="mc-meta">
+                <span class="mc-tag">☕ Signature</span>
+                <span class="mc-tag">🌿 Veg</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FOOD panel -->
+      <div class="menu-panel" id="tab-food" role="tabpanel" hidden>
+        <div class="menu-grid">
+
+          <div class="menu-card reveal-up" style="--d:0.0s">
+            <div class="mc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400&q=80" alt="French Toast" loading="lazy" />
+              <span class="mc-badge">Breakfast</span>
+            </div>
+            <div class="mc-body">
+              <div class="mc-top">
+                <h3 class="mc-name">French Toast</h3>
+                <span class="mc-price">₹220</span>
+              </div>
+              <p class="mc-desc">Thick brioche slices soaked in spiced custard, caramelised and topped with maple syrup.</p>
+              <div class="mc-meta">
+                <span class="mc-tag">🍞 Sweet</span>
+                <span class="mc-tag">🌿 Veg</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card reveal-up" style="--d:0.07s">
+            <div class="mc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80" alt="Paneer Popcorn" loading="lazy" />
+              <span class="mc-badge mc-badge-spice">Spicy 🌶</span>
+            </div>
+            <div class="mc-body">
+              <div class="mc-top">
+                <h3 class="mc-name">Paneer Popcorn</h3>
+                <span class="mc-price">₹240</span>
+              </div>
+              <p class="mc-desc">Crispy paneer bites tossed in our secret spice blend, served with chipotle dip.</p>
+              <div class="mc-meta">
+                <span class="mc-tag">🧀 Crispy</span>
+                <span class="mc-tag">🌿 Veg</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-card reveal-up" style="--d:0.14s">
+            <div class="mc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400&q=80" alt="Burrito Bowl" loading="lazy" />
+              <span class="mc-badge mc-badge-green">Hearty</span>
+            </div>
+            <div class="mc-body">
+              <div class="mc-top">
+                <h3 class="mc-name">Burrito Bowl</h3>
+                <span class="mc-price">₹290</span>
+              </div>
+              <p class="mc-desc">Mexican-spiced rice with roasted veggies, sour cream, salsa, and fresh guac.</p>
+              <div class="mc-meta">
+                <span class="mc-tag">🌯 Filling</span>
+                <span class="mc-tag">🌿 Veg</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="menu-footer reveal-up">
+        <p>Full menu available at the café. Seasonal specials change weekly. Ask our team!</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║           GALLERY                ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="eyebrow">Visual Stories</p>
+        <h2 class="section-heading">A Peek <em>Inside</em></h2>
+      </div>
+    </div>
+
+    <div class="gallery-mosaic">
+      <div class="gm-item gm-tall reveal-up" style="--d:0.0s">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&q=80" alt="Café corner with warm lighting" loading="lazy" />
+        <div class="gm-label">The Corner Table</div>
+      </div>
+      <div class="gm-item reveal-up" style="--d:0.07s">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&q=80" alt="Artisan latte art" loading="lazy" />
+        <div class="gm-label">Latte Art</div>
+      </div>
+      <div class="gm-item reveal-up" style="--d:0.14s">
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&q=80" alt="Pastries and desserts" loading="lazy" />
+        <div class="gm-label">Fresh Pastries</div>
+      </div>
+      <div class="gm-item gm-wide reveal-up" style="--d:0.21s">
+        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=800&q=80" alt="Café interior shot" loading="lazy" />
+        <div class="gm-label">Our Space</div>
+      </div>
+      <div class="gm-item reveal-up" style="--d:0.28s">
+        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=500&q=80" alt="Iced coffee drinks" loading="lazy" />
+        <div class="gm-label">Iced Specials</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║           REVIEWS               ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="reviews section" id="reviews">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="eyebrow">What People Say</p>
+        <h2 class="section-heading">Loved by <em>Locals</em></h2>
+      </div>
+
+      <!-- Rating Banner -->
+      <div class="rating-banner reveal-up">
+        <div class="rb-score">
+          <span class="rb-num">4.4</span>
+          <div class="rb-right">
+            <div class="rb-stars" aria-label="4.4 out of 5">★★★★½</div>
+            <div class="rb-count">Based on 205 Google Reviews</div>
+          </div>
+        </div>
+        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-espresso btn-sm">
+          Write a Review
+          <i data-lucide="external-link" width="14" height="14"></i>
+        </a>
+      </div>
+
+      <!-- Review Cards -->
+      <div class="reviews-grid">
+
+        <div class="review-card reveal-up" style="--d:0.05s">
+          <div class="rc-header">
+            <div class="rc-avatar" style="--hue:28">S</div>
+            <div>
+              <strong class="rc-name">Simran K.</strong>
+              <span class="rc-loc">Model Town</span>
+            </div>
+            <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          </div>
+          <p class="rc-text">"Very yummy food, excellent service. The Tiramisu Coffee is absolutely to die for — I come back every week just for it. Staff is always warm and welcoming!"</p>
+          <div class="rc-footer">
+            <i data-lucide="google" width="14" height="14"></i>
+            <span>Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card reveal-up" style="--d:0.12s">
+          <div class="rc-header">
+            <div class="rc-avatar" style="--hue:200">A</div>
+            <div>
+              <strong class="rc-name">Aryan P.</strong>
+              <span class="rc-loc">Abadpura</span>
+            </div>
+            <div class="rc-stars" aria-label="4 stars">★★★★☆</div>
+          </div>
+          <p class="rc-text">"Amazing vibe and quick service. Loved the Matcha Latte and Paneer Popcorn combo — such a great pairing! The interior is cosy and perfect for working from."</p>
+          <div class="rc-footer">
+            <i data-lucide="google" width="14" height="14"></i>
+            <span>Google Review</span>
+          </div>
+        </div>
+
+        <div class="review-card reveal-up" style="--d:0.19s">
+          <div class="rc-header">
+            <div class="rc-avatar" style="--hue:120">P</div>
+            <div>
+              <strong class="rc-name">Priya R.</strong>
+              <span class="rc-loc">Jalandhar City</span>
+            </div>
+            <div class="rc-stars" aria-label="5 stars">★★★★★</div>
+          </div>
+          <p class="rc-text">"Great place to relax with friends. The space is inclusive and comfortable — love that it's women-owned. The Burrito Bowl is one of the best I've had in the city!"</p>
+          <div class="rc-footer">
+            <i data-lucide="google" width="14" height="14"></i>
+            <span>Google Review</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║           CONTACT                ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="eyebrow">Find Us</p>
+        <h2 class="section-heading">Come Say <em>Hello</em></h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Info + Form -->
+        <div class="contact-left reveal-left">
+
+          <!-- Info items -->
+          <div class="contact-info">
+            <div class="ci-item">
+              <div class="ci-icon"><i data-lucide="map-pin" width="20" height="20"></i></div>
+              <div>
+                <strong>Address</strong>
+                <p>Ground Floor, The Elite City Center,<br />Model Town Rd, Abadpura,<br />Model Town, Jalandhar, Punjab 144001</p>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon"><i data-lucide="phone" width="20" height="20"></i></div>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:08699766654" class="ci-link">08699766654</a></p>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon"><i data-lucide="clock" width="20" height="20"></i></div>
+              <div>
+                <strong>Hours</strong>
+                <p>Open daily from <span class="cream">9:30 AM</span></p>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon"><i data-lucide="instagram" width="20" height="20"></i></div>
+              <div>
+                <strong>Instagram</strong>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="ci-link">@clubhousecafe_jal</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3 class="form-heading">Send a Message</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-name">Your Name</label>
+                <input type="text" id="cf-name" name="name" placeholder="e.g. Priya Sharma" autocomplete="name" />
+                <span class="form-error" id="err-name"></span>
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Email Address</label>
+                <input type="email" id="cf-email" name="email" placeholder="you@example.com" autocomplete="email" />
+                <span class="form-error" id="err-email"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="cf-subject">Subject</label>
+              <input type="text" id="cf-subject" name="subject" placeholder="Reservation, feedback…" />
+            </div>
+
+            <div class="form-group">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="Tell us anything…"></textarea>
+              <span class="form-error" id="err-message"></span>
+            </div>
+
+            <button type="submit" class="btn btn-espresso btn-lg form-submit">
+              <i data-lucide="send" width="16" height="16"></i>
+              Send Message
+            </button>
+
+            <!-- Success banner (hidden by default) -->
+            <div class="form-success" id="formSuccess" hidden>
+              <i data-lucide="check-circle" width="20" height="20"></i>
+              Thank you! We'll get back to you soon. ☕
+            </div>
+          </form>
+        </div>
+
+        <!-- Map -->
+        <div class="contact-map reveal-right">
+          <div class="map-wrap">
+            <iframe
+              title="Clubhouse Cafe Location — Model Town, Jalandhar"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.2345678901234!2d75.86000000000001!3d31.32500000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5bf500000000%3A0x000000000000000!2sElite%20City%20Center%2C%20Model%20Town%20Rd%2C%20Jalandhar!5e0!3m2!1sen!2sin!4v1700000000000"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <!-- Quick action buttons -->
+          <div class="map-actions">
+            <a href="tel:08699766654" class="btn btn-espresso btn-icon">
+              <i data-lucide="phone-call" width="16" height="16"></i>
+              Call Now
+            </a>
+            <a
+              href="https://wa.me/918699766654?text=Hi!%20I%20want%20to%20make%20a%20reservation%20at%20Clubhouse%20Cafe."
+              target="_blank" rel="noopener noreferrer"
+              class="btn btn-green btn-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.522 5.85L.057 23.885a.5.5 0 0 0 .612.612l6.035-1.465A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 0 1-5.001-1.368l-.358-.213-3.714.902.918-3.621-.233-.374A9.823 9.823 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+              WhatsApp
+            </a>
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-cream btn-icon">
+              <i data-lucide="navigation" width="16" height="16"></i>
+              Directions
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║           FOOTER                 ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <div class="logo-mark-lg" aria-hidden="true">☕</div>
+        <div>
+          <span class="footer-name">Clubhouse Cafe</span>
+          <p class="footer-tagline">Great Coffee. Great Vibes.</p>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-social">
+        <p class="footer-social-label">Follow Along</p>
+        <div class="social-row">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <i data-lucide="instagram" width="18" height="18"></i>
+          </a>
+          <a href="https://wa.me/918699766654" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp">
+            <i data-lucide="message-circle" width="18" height="18"></i>
+          </a>
+          <a href="tel:08699766654" class="social-btn" aria-label="Call us">
+            <i data-lucide="phone" width="18" height="18"></i>
+          </a>
+        </div>
+        <div class="footer-badges">
+          <span>🏳️‍🌈 LGBTQ+ Friendly</span>
+          <span>♀ Women-Owned</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="year"></span> Clubhouse Cafe, Jalandhar. All rights reserved.</p>
+        <p>Model Town Rd · 08699766654</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp FAB -->
+  <a href="https://wa.me/918699766654?text=Hi!%20I%20want%20to%20know%20more%20about%20Clubhouse%20Cafe."
+     target="_blank" rel="noopener noreferrer"
+     class="fab-wa"
+     aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.522 5.85L.057 23.885a.5.5 0 0 0 .612.612l6.035-1.465A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 0 1-5.001-1.368l-.358-.213-3.714.902.918-3.621-.233-.374A9.823 9.823 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
